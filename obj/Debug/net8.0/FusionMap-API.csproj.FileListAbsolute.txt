@@ -34,3 +34,4 @@ C:\Users\Declan\source\repos\FusionMap-API\obj\Debug\net8.0\ref\FusionMap-API.dl
 C:\Users\Declan\source\repos\FusionMap-API\bin\Debug\net8.0\Npgsql.dll
 C:\Users\Declan\source\repos\FusionMap-API\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\Declan\source\repos\FusionMap-API\bin\Debug\net8.0\Dapper.dll
+C:\Users\Declan\source\repos\FusionMap-API\obj\Debug\net8.0\FusionMap-API.sourcelink.json

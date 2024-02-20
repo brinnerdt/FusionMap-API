@@ -41,6 +41,8 @@ namespace FusionMapAPI.Controllers
                     ReferenceUnitPower = @ReferenceUnitPower,
                     GrossElectricalCapacity = @GrossElectricalCapacity,
                     FirstGridConnection = @FirstGridConnection
+                    Latitude = @Latitude,
+                    Longitude = @Longitude
                 WHERE PlantId = @PlantId";
 
             var parameters = new DynamicParameters();
@@ -51,6 +53,8 @@ namespace FusionMapAPI.Controllers
             parameters.Add("ReferenceUnitPower", plant.ReferenceUnitPower);
             parameters.Add("GrossElectricalCapacity", plant.GrossElectricalCapacity);
             parameters.Add("FirstGridConnection", plant.FirstGridConnection);
+            parameters.Add("Latitude", plant.Latitude);
+            parameters.Add("Longitude", plant.Longitude);
 
             if (_dapper.ExecuteSql(sql, parameters))
             {
@@ -72,14 +76,18 @@ namespace FusionMapAPI.Controllers
                     Status, 
                     ReferenceUnitPower, 
                     GrossElectricalCapacity, 
-                    FirstGridConnection
+                    FirstGridConnection,
+                    Latitude,
+                    Longitude
                 ) VALUES (
                     @Name, 
                     @StateId, 
                     @Status, 
                     @ReferenceUnitPower, 
                     @GrossElectricalCapacity, 
-                    @FirstGridConnection
+                    @FirstGridConnection,
+                    @Latitude,
+                    @Longitude
                 )";
 
             var parameters = new DynamicParameters();
@@ -89,6 +97,8 @@ namespace FusionMapAPI.Controllers
             parameters.Add("ReferenceUnitPower", plant.ReferenceUnitPower);
             parameters.Add("GrossElectricalCapacity", plant.GrossElectricalCapacity);
             parameters.Add("FirstGridConnection", plant.FirstGridConnection);
+            parameters.Add("Latitude", plant.Latitude);
+            parameters.Add("Longitude", plant.Longitude);
 
             if (_dapper.ExecuteSql(sql, parameters))
             {

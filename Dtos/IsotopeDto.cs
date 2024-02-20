@@ -1,8 +1,7 @@
-namespace FusionMapAPI.Models
+namespace FusionMapAPI.Dtos
 {
-    public partial class Isotope
+    public partial class IsotopeDto
     {
-        public int IsotopeId { get; set; }
         public string Name { get; set; } = "";
         public string Symbol { get; set; } = "";
         public int halfLife { get; set; }
