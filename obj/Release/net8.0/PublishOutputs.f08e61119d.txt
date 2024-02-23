@@ -1,0 +1,15 @@
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\FusionMap-API.exe
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\appsettings.json
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\FusionMap-API.dll
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\FusionMap-API.deps.json
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\FusionMap-API.runtimeconfig.json
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\FusionMap-API.pdb
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\AutoMapper.dll
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\Dapper.dll
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\Microsoft.OpenApi.dll
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\Npgsql.dll
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -92,7 +92,6 @@ namespace FusionMapAPI.Controllers
 
             var parameters = new DynamicParameters();
             parameters.Add("Name", plant.Name);
-            parameters.Add("StateId", plant.StateId);
             parameters.Add("Status", plant.Status);
             parameters.Add("ReferenceUnitPower", plant.ReferenceUnitPower);
             parameters.Add("GrossElectricalCapacity", plant.GrossElectricalCapacity);
@@ -124,6 +123,23 @@ namespace FusionMapAPI.Controllers
             {
                 return BadRequest();
             }
+        }
+
+        [HttpGet("PlantRadiations")]
+        public IEnumerable<PlantReactorDto> GetPlantRadiations()
+        {
+            string sql = @"
+                SELECT 
+                    p.Name,
+                    AVG(r.RadiationLevel) AS AvgReactorRadiation
+                FROM plant p
+                JOIN reactor r ON p.PlantId = r.PlantId
+                GROUP BY p.Name
+                ORDER BY AvgReactorRadiation DESC
+                LIMIT 10;";
+
+            IEnumerable<PlantReactorDto> plantRadiations = _dapper.LoadData<PlantReactorDto>(sql);
+            return plantRadiations;
         }
     }
 }
