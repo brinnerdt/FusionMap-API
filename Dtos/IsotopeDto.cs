@@ -4,6 +4,8 @@ namespace FusionMapAPI.Dtos
     {
         public string Name { get; set; } = "";
         public string Symbol { get; set; } = "";
-        public int halfLife { get; set; }
+        public int HalfLife { get; set; }
+        public DateTime DateSynthesized { get; set; }
+
     }
 }

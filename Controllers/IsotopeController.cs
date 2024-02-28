@@ -15,7 +15,7 @@ namespace FusionMapAPI.Controllers
         [HttpGet("GetIsotopes")]
         public IEnumerable<Isotope> GetIsotopes()
         {
-            string sql = @"SELECT * FROM isotope";
+            string sql = @"SELECT * FROM isotope ORDER BY DateSynthesized DESC";
             IEnumerable<Isotope> isotopes = _dapper.LoadData<Isotope>(sql);
             return isotopes;
         }
@@ -36,13 +36,15 @@ namespace FusionMapAPI.Controllers
             string sql = @"
                 UPDATE isotope
                     SET Name = @Name,
-                    Symbol = @Symbol
+                    Symbol = @Symbol,
+                    HalfLife = @HalfLife
                 WHERE IsotopeId = @IsotopeId";
 
             var parameters = new DynamicParameters();
             parameters.Add("IsotopeId", isotope.IsotopeId);
             parameters.Add("Name", isotope.Name);
             parameters.Add("Symbol", isotope.Symbol);
+            parameters.Add("HalfLife", isotope.HalfLife);
 
             if (_dapper.ExecuteSql(sql, parameters))
             {
@@ -58,12 +60,14 @@ namespace FusionMapAPI.Controllers
         public IActionResult AddIsotope(IsotopeDto isotope)
         {
             string sql = @"
-                INSERT INTO isotope (Name, Symbol)
-                VALUES (@Name, @Symbol)";
+                INSERT INTO isotope (Name, Symbol, HalfLife, DateSynthesized)
+                VALUES (@Name, @Symbol, @HalfLife, @DateSynthesized)";
 
             var parameters = new DynamicParameters();
             parameters.Add("Name", isotope.Name);
             parameters.Add("Symbol", isotope.Symbol);
+            parameters.Add("HalfLife", isotope.HalfLife);
+            parameters.Add("DateSynthesized", isotope.DateSynthesized);
 
             if (_dapper.ExecuteSql(sql, parameters))
             {

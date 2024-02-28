@@ -141,5 +141,18 @@ namespace FusionMapAPI.Controllers
             IEnumerable<PlantReactorDto> plantRadiations = _dapper.LoadData<PlantReactorDto>(sql);
             return plantRadiations;
         }
+
+        [HttpGet("PlantCountByYear")]
+        public IEnumerable<PlantCountByYearDto> GetPlantCountByYear()
+        {
+            string sql = @"
+                SELECT EXTRACT(YEAR FROM firstgridconnection) AS year, COUNT(*)
+                FROM plant
+                GROUP BY year
+                ORDER BY year;";
+
+            IEnumerable<PlantCountByYearDto> plantCountByYear = _dapper.LoadData<PlantCountByYearDto>(sql);
+            return plantCountByYear;
+        }
     }
 }

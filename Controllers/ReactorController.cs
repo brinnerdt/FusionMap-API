@@ -106,5 +106,16 @@ namespace FusionMapAPI.Controllers
                 return BadRequest();
             }
         }
+
+        [HttpGet("ReactorListItems")]
+        public IEnumerable<ReactorInfoDto> ReactorListItems()
+        {
+            string sql = @"SELECT reactorid, name, maxpoweroutput, concat_ws(' ', firstname, lastname) as leadengineer FROM reactor r
+                JOIN inspection_type it on r.inspectionid = it.inspectionid
+                JOIN employee e on r.leadengineerid = e.employeeid";
+
+            IEnumerable<ReactorInfoDto> reactors = _dapper.LoadData<ReactorInfoDto>(sql);
+            return reactors;
+        }
     }
 }
