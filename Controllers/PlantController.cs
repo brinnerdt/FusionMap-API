@@ -36,7 +36,6 @@ namespace FusionMapAPI.Controllers
             string sql = @"
                 UPDATE plant
                     SET Name = @Name,
-                    StateId = @StateId,
                     Status = @Status,
                     ReferenceUnitPower = @ReferenceUnitPower,
                     GrossElectricalCapacity = @GrossElectricalCapacity,
@@ -48,7 +47,6 @@ namespace FusionMapAPI.Controllers
             var parameters = new DynamicParameters();
             parameters.Add("PlantId", plant.PlantId);
             parameters.Add("Name", plant.Name);
-            parameters.Add("StateId", plant.StateId);
             parameters.Add("Status", plant.Status);
             parameters.Add("ReferenceUnitPower", plant.ReferenceUnitPower);
             parameters.Add("GrossElectricalCapacity", plant.GrossElectricalCapacity);
@@ -72,7 +70,6 @@ namespace FusionMapAPI.Controllers
             string sql = @"
                 INSERT INTO plant (
                     Name, 
-                    StateId, 
                     Status, 
                     ReferenceUnitPower, 
                     GrossElectricalCapacity, 
@@ -81,7 +78,6 @@ namespace FusionMapAPI.Controllers
                     Longitude
                 ) VALUES (
                     @Name, 
-                    @StateId, 
                     @Status, 
                     @ReferenceUnitPower, 
                     @GrossElectricalCapacity, 

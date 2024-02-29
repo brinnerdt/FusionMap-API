@@ -10,5 +10,6 @@ namespace FusionMapAPI.Models
         public int Salary { get; set; }
         public string Email { get; set; } = "";
         public string PhoneNumber { get; set; } = "";
+        public byte[] ProfilePicture { get; set; } = [];
     }
 }

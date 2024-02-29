@@ -1,4 +1,5 @@
 C:\Users\Declan\source\repos\FusionMap-API\out\FusionMap-API.exe
+C:\Users\Declan\source\repos\FusionMap-API\out\out\out\out\out\out\web.config
 C:\Users\Declan\source\repos\FusionMap-API\out\out\out\out\out\web.config
 C:\Users\Declan\source\repos\FusionMap-API\out\out\out\out\web.config
 C:\Users\Declan\source\repos\FusionMap-API\out\out\out\web.config
@@ -21,6 +22,10 @@ C:\Users\Declan\source\repos\FusionMap-API\out\out\out\out\out\appsettings.Devel
 C:\Users\Declan\source\repos\FusionMap-API\out\out\out\out\out\appsettings.json
 C:\Users\Declan\source\repos\FusionMap-API\out\out\out\out\out\FusionMap-API.deps.json
 C:\Users\Declan\source\repos\FusionMap-API\out\out\out\out\out\FusionMap-API.runtimeconfig.json
+C:\Users\Declan\source\repos\FusionMap-API\out\out\out\out\out\out\appsettings.Development.json
+C:\Users\Declan\source\repos\FusionMap-API\out\out\out\out\out\out\appsettings.json
+C:\Users\Declan\source\repos\FusionMap-API\out\out\out\out\out\out\FusionMap-API.deps.json
+C:\Users\Declan\source\repos\FusionMap-API\out\out\out\out\out\out\FusionMap-API.runtimeconfig.json
 C:\Users\Declan\source\repos\FusionMap-API\out\FusionMap-API.dll
 C:\Users\Declan\source\repos\FusionMap-API\out\FusionMap-API.deps.json
 C:\Users\Declan\source\repos\FusionMap-API\out\FusionMap-API.runtimeconfig.json

@@ -15,7 +15,7 @@ namespace FusionMapAPI.Controllers
         [HttpGet("GetEmployees")]
         public IEnumerable<Employee> GetEmployees()
         {
-            string sql = @"SELECT * FROM employee";
+            string sql = @"SELECT * FROM employee ORDER BY FirstName ASC";
             IEnumerable<Employee> employees = _dapper.LoadData<Employee>(sql);
             return employees;
         }

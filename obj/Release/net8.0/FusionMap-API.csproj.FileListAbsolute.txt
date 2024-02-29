@@ -55,3 +55,8 @@ C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\out\out\out\out\ap
 C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\out\out\out\out\appsettings.json
 C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\out\out\out\out\FusionMap-API.deps.json
 C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\out\out\out\out\FusionMap-API.runtimeconfig.json
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\out\out\out\out\out\web.config
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\out\out\out\out\out\appsettings.Development.json
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\out\out\out\out\out\appsettings.json
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\out\out\out\out\out\FusionMap-API.deps.json
+C:\Users\Declan\source\repos\FusionMap-API\bin\Release\net8.0\out\out\out\out\out\FusionMap-API.runtimeconfig.json
