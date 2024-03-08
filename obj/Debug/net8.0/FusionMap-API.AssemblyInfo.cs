@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FusionMap-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cce7f765f6ce1f9803afbbb851ea9c2c97ff0a0d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a6264094ad86422940bc2abef20f20cadcf7669")]
 [assembly: System.Reflection.AssemblyProductAttribute("FusionMap-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FusionMap-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

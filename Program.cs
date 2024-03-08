@@ -17,19 +17,19 @@ builder.Services.AddCors((options) =>
     options.AddPolicy("DevCors", (corsBuilder) =>
     {
         corsBuilder
-            .WithOrigins("http://localhost:3000")
+            // .WithOrigins("http://localhost:3000")
+            .AllowAnyOrigin()
             .AllowAnyHeader()
-            .AllowAnyMethod()
-            .AllowCredentials();
+            .AllowAnyMethod();
     });
     options.AddPolicy("ProdCors", (corsBuilder) =>
     {
         corsBuilder
             // .WithOrigins("https://myproductionapp.com")
-            .WithOrigins("http://localhost:3000")
+            // .WithOrigins("http://172.19.0.4:3000", "http://localhost:3000", "http://web:3000")
+            .AllowAnyOrigin()
             .AllowAnyHeader()
-            .AllowAnyMethod()
-            .AllowCredentials();
+            .AllowAnyMethod();
     });
 });
 
@@ -55,7 +55,8 @@ else
     });
     app.UseCors("ProdCors");
 }
-
+app.UseStaticFiles();
+app.UseRouting();
 app.MapControllers();
 
 app.Run();

@@ -31,7 +31,7 @@ namespace FusionMapAPI.Controllers
         }
 
         [HttpPut("UpdatePlant")]
-        public IActionResult UpdatePlant(Plant plant)
+        public IActionResult UpdatePlant(PlantDto plant)
         {
             string sql = @"
                 UPDATE plant
@@ -40,8 +40,6 @@ namespace FusionMapAPI.Controllers
                     ReferenceUnitPower = @ReferenceUnitPower,
                     GrossElectricalCapacity = @GrossElectricalCapacity,
                     FirstGridConnection = @FirstGridConnection
-                    Latitude = @Latitude,
-                    Longitude = @Longitude
                 WHERE PlantId = @PlantId";
 
             var parameters = new DynamicParameters();
@@ -51,9 +49,6 @@ namespace FusionMapAPI.Controllers
             parameters.Add("ReferenceUnitPower", plant.ReferenceUnitPower);
             parameters.Add("GrossElectricalCapacity", plant.GrossElectricalCapacity);
             parameters.Add("FirstGridConnection", plant.FirstGridConnection);
-            parameters.Add("Latitude", plant.Latitude);
-            parameters.Add("Longitude", plant.Longitude);
-
             if (_dapper.ExecuteSql(sql, parameters))
             {
                 return Ok();
@@ -65,7 +60,7 @@ namespace FusionMapAPI.Controllers
         }
 
         [HttpPost("AddPlant")]
-        public IActionResult AddPlant(PlantDto plant)
+        public IActionResult AddPlant(Plant plant)
         {
             string sql = @"
                 INSERT INTO plant (
